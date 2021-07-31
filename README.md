@@ -8,3 +8,5 @@ reflex -r '\.go' -s -- sh -c "go run main.go"
 ```
 By using reflex, whenever the `.go` file is change, it will run main.go again.
 <hr>
+
+## Phase 2
