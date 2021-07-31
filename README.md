@@ -10,3 +10,10 @@ By using reflex, whenever the `.go` file is change, it will run main.go again.
 <hr>
 
 ## Phase 2
+To run with docker
+```
+cd cmd/hash
+```
+```
+docker compose up
+```

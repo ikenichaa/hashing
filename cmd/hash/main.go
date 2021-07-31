@@ -10,5 +10,5 @@ func main() {
 	e := echo.New()
 	h := handler.NewHandler()
 	h.InitRoutes(e)
-	e.Logger.Fatal(e.Start(":1323"))
+	e.Logger.Fatal(e.Start(":8080"))
 }

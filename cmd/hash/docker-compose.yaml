@@ -1,8 +1,14 @@
-version: '3.8'
+version: '3.5'
 services:
-    hash:
-        build: 
-            context: ../..
+    app:
+        container_name: store-management
+        build:
+            context: ../../
             dockerfile: build/Dockerfile
-            args:
-                service: hash
+        volumes:
+            - ../../:/src/go
+        working_dir: /src/go/cmd/hash
+        ports:
+            - 8080:8080
+        command: reflex -r '(\.go$$)' -s go run .
+

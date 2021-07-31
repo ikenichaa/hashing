@@ -19,5 +19,5 @@ func (h *Handler) Sha256(c echo.Context) error {
 		fmt.Println(err)
 	}
 	fmt.Println(u)
-	return c.String(http.StatusOK, "Hello, From sha256 kkk!")
+	return c.String(http.StatusOK, "Hello, From sha256!")
 }
