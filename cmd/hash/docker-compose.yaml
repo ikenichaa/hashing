@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+    hash:
+        build: 
+            context: ../..
+            dockerfile: build/Dockerfile
+            args:
+                service: hash
